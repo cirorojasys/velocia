@@ -1,0 +1,492 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VELOCIA — Tu Ciclovía de Confianza</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@300;400;500;600&family=Fraunces:ital,wght@0,300;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav id="navbar">
+      <div class="nav-inner">
+        <a href="#" class="nav-logo">
+          <svg
+            viewBox="0 0 40 40"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <circle
+              cx="10"
+              cy="28"
+              r="7"
+              stroke="#E8532A"
+              stroke-width="2.5"
+              fill="none"
+            />
+            <circle
+              cx="30"
+              cy="28"
+              r="7"
+              stroke="#E8532A"
+              stroke-width="2.5"
+              fill="none"
+            />
+            <path
+              d="M10 28 L20 12 L30 28"
+              stroke="#1A1A2E"
+              stroke-width="2.5"
+              stroke-linejoin="round"
+              fill="none"
+            />
+            <path
+              d="M15 20 L30 28"
+              stroke="#1A1A2E"
+              stroke-width="2"
+              fill="none"
+            />
+            <circle cx="20" cy="12" r="2.5" fill="#E8532A" />
+          </svg>
+          <span class="nav-logo-text">VELOCIA</span>
+        </a>
+        <div class="nav-menu">
+          <a href="#catalogo" class="nav-link">Catálogo</a>
+          <a href="#categorias" class="nav-link">Categorías</a>
+          <a href="#nosotros" class="nav-link">Nosotros</a>
+        </div>
+        <div class="nav-actions">
+          <div class="search-box">
+            <svg
+              width="16"
+              height="16"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <circle cx="11" cy="11" r="8" />
+              <path d="m21 21-4.35-4.35" />
+            </svg>
+            <input
+              type="text"
+              id="searchInput"
+              placeholder="Buscar bicicleta..."
+            />
+          </div>
+          <button class="cart-btn" id="cartToggle" aria-label="Carrito">
+            <svg
+              width="22"
+              height="22"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z" />
+              <line x1="3" y1="6" x2="21" y2="6" />
+              <path d="M16 10a4 4 0 0 1-8 0" />
+            </svg>
+            <span class="cart-count" id="cartCount">0</span>
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- PROMO BAR -->
+    <div class="promo-bar">
+      🚴 Envío gratis en compras mayores a <span>$1.500.000</span> · Garantía de
+      1 año en todos los modelos
+    </div>
+
+    <!-- HERO -->
+    <section id="hero">
+      <div class="hero-bg">
+        <div class="hero-circle c1"></div>
+        <div class="hero-circle c2"></div>
+        <div class="hero-stripe"></div>
+      </div>
+      <div class="hero-content">
+        <div class="hero-text">
+          <p class="hero-tag">🏆 #1 Tienda de Bicicletas en Colombia</p>
+          <h1 class="hero-title">PEDALEA<br /><em>sin límites</em></h1>
+          <p class="hero-sub">
+            Bicicletas de montaña, ruta, urbanas y eléctricas. La que siempre
+            soñaste está aquí.
+          </p>
+          <div class="hero-btns">
+            <a href="#catalogo" class="btn-primary">Ver Catálogo</a>
+            <a href="#nosotros" class="btn-ghost">Nuestra historia →</a>
+          </div>
+          <div class="hero-stats">
+            <div class="stat">
+              <span>+500</span>
+              <p>Modelos</p>
+            </div>
+            <div class="stat">
+              <span>12</span>
+              <p>Años de exp.</p>
+            </div>
+            <div class="stat">
+              <span>4.9★</span>
+              <p>Calificación</p>
+            </div>
+          </div>
+        </div>
+        <div class="hero-img-wrap">
+          <div class="hero-badge">NUEVO 2025</div>
+          <div class="hero-bike-visual">
+            <svg
+              viewBox="0 0 340 220"
+              xmlns="http://www.w3.org/2000/svg"
+              class="bike-svg"
+            >
+              <!-- Rear wheel -->
+              <circle
+                cx="80"
+                cy="160"
+                r="55"
+                fill="none"
+                stroke="#1A1A2E"
+                stroke-width="6"
+              />
+              <circle cx="80" cy="160" r="8" fill="#E8532A" />
+              <!-- Spokes rear -->
+              <line
+                x1="80"
+                y1="105"
+                x2="80"
+                y2="155"
+                stroke="#555"
+                stroke-width="1.5"
+              />
+              <line
+                x1="80"
+                y1="165"
+                x2="80"
+                y2="215"
+                stroke="#555"
+                stroke-width="1.5"
+              />
+              <line
+                x1="25"
+                y1="160"
+                x2="72"
+                y2="160"
+                stroke="#555"
+                stroke-width="1.5"
+              />
+              <line
+                x1="88"
+                y1="160"
+                x2="135"
+                y2="160"
+                stroke="#555"
+                stroke-width="1.5"
+              />
+              <line
+                x1="41"
+                y1="121"
+                x2="74"
+                y2="154"
+                stroke="#555"
+                stroke-width="1.5"
+              />
+              <line
+                x1="86"
+                y1="166"
+                x2="119"
+                y2="199"
+                stroke="#555"
+                stroke-width="1.5"
+              />
+              <line
+                x1="119"
+                y1="121"
+                x2="86"
+                y2="154"
+                stroke="#555"
+                stroke-width="1.5"
+              />
+              <line
+                x1="74"
+                y1="166"
+                x2="41"
+                y2="199"
+                stroke="#555"
+                stroke-width="1.5"
+              />
+              <!-- Front wheel -->
+              <circle
+                cx="262"
+                cy="160"
+                r="55"
+                fill="none"
+                stroke="#1A1A2E"
+                stroke-width="6"
+              />
+              <circle cx="262" cy="160" r="8" fill="#E8532A" />
+              <!-- Spokes front -->
+              <line
+                x1="262"
+                y1="105"
+                x2="262"
+                y2="155"
+                stroke="#555"
+                stroke-width="1.5"
+              />
+              <line
+                x1="262"
+                y1="165"
+                x2="262"
+                y2="215"
+                stroke="#555"
+                stroke-width="1.5"
+              />
+              <line
+                x1="207"
+                y1="160"
+                x2="254"
+                y2="160"
+                stroke="#555"
+                stroke-width="1.5"
+              />
+              <line
+                x1="270"
+                y1="160"
+                x2="317"
+                y2="160"
+                stroke="#555"
+                stroke-width="1.5"
+              />
+              <line
+                x1="223"
+                y1="121"
+                x2="256"
+                y2="154"
+                stroke="#555"
+                stroke-width="1.5"
+              />
+              <line
+                x1="268"
+                y1="166"
+                x2="301"
+                y2="199"
+                stroke="#555"
+                stroke-width="1.5"
+              />
+              <line
+                x1="301"
+                y1="121"
+                x2="268"
+                y2="154"
+                stroke="#555"
+                stroke-width="1.5"
+              />
+              <line
+                x1="256"
+                y1="166"
+                x2="223"
+                y2="199"
+                stroke="#555"
+                stroke-width="1.5"
+              />
+              <!-- Frame -->
+              <path
+                d="M80 160 L170 80 L262 160"
+                fill="none"
+                stroke="#E8532A"
+                stroke-width="7"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M170 80 L200 160"
+                fill="none"
+                stroke="#E8532A"
+                stroke-width="7"
+              />
+              <path
+                d="M80 160 L200 160"
+                fill="none"
+                stroke="#1A1A2E"
+                stroke-width="5"
+              />
+              <path
+                d="M200 160 L262 160"
+                fill="none"
+                stroke="#1A1A2E"
+                stroke-width="5"
+              />
+              <!-- Seat -->
+              <path d="M135 95 L175 80" stroke="#1A1A2E" stroke-width="5" />
+              <path
+                d="M120 90 L155 92"
+                stroke="#1A1A2E"
+                stroke-width="5"
+                stroke-linecap="round"
+              />
+              <!-- Handlebar -->
+              <path d="M232 100 L250 85" stroke="#1A1A2E" stroke-width="5" />
+              <path
+                d="M248 75 L258 95"
+                stroke="#1A1A2E"
+                stroke-width="5"
+                stroke-linecap="round"
+              />
+              <!-- Pedal crank -->
+              <circle
+                cx="200"
+                cy="160"
+                r="12"
+                fill="none"
+                stroke="#1A1A2E"
+                stroke-width="4"
+              />
+              <line
+                x1="200"
+                y1="148"
+                x2="200"
+                y2="172"
+                stroke="#1A1A2E"
+                stroke-width="4"
+              />
+              <circle cx="200" cy="148" r="4" fill="#E8532A" />
+              <circle cx="200" cy="172" r="4" fill="#E8532A" />
+            </svg>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CATEGORIAS -->
+    <section id="categorias" class="section-pad">
+      <div class="container">
+        <h2 class="section-title">Encuentra tu tipo de bicicleta</h2>
+        <div class="cats-grid">
+          <button class="cat-card active" data-cat="todos">
+            <span class="cat-icon">🚲</span>
+            <span>Todas</span>
+          </button>
+          <button class="cat-card" data-cat="montana">
+            <span class="cat-icon">⛰️</span>
+            <span>Montaña</span>
+          </button>
+          <button class="cat-card" data-cat="ruta">
+            <span class="cat-icon">🏁</span>
+            <span>Ruta</span>
+          </button>
+          <button class="cat-card" data-cat="urbana">
+            <span class="cat-icon">🏙️</span>
+            <span>Urbana</span>
+          </button>
+          <button class="cat-card" data-cat="electrica">
+            <span class="cat-icon">⚡</span>
+            <span>Eléctrica</span>
+          </button>
+          <button class="cat-card" data-cat="infantil">
+            <span class="cat-icon">🧒</span>
+            <span>Infantil</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- CATALOGO -->
+    <section id="catalogo" class="section-pad bg-light">
+      <div class="container">
+        <div class="catalogo-header">
+          <h2 class="section-title">Catálogo</h2>
+          <p id="resultCount" class="result-count"></p>
+        </div>
+        <div id="productGrid" class="product-grid"></div>
+      </div>
+    </section>
+
+    <!-- NOSOTROS -->
+    <section id="nosotros" class="section-pad">
+      <div class="container nosotros-wrap">
+        <div class="nosotros-text">
+          <p class="section-sup">¿Por qué VELOCIA?</p>
+          <h2 class="section-title left">
+            Más que una tienda, somos tu comunidad ciclista
+          </h2>
+          <p class="nosotros-desc">
+            Desde 2013 llevamos bicicletas de calidad a ciclistas colombianos.
+            Trabajamos con las marcas más reconocidas del mundo y seleccionamos
+            cada modelo con criterio técnico y pasión por el deporte.
+          </p>
+          <ul class="nosotros-features">
+            <li>✅ Garantía oficial de fábrica en todos los modelos</li>
+            <li>✅ Asesoría personalizada con nuestros expertos</li>
+            <li>✅ Envío seguro a todo Colombia</li>
+            <li>✅ Facilidades de pago hasta en 36 cuotas</li>
+          </ul>
+        </div>
+        <div class="nosotros-visual">
+          <div class="visual-card vc1">
+            +500<br /><small>modelos disponibles</small>
+          </div>
+          <div class="visual-card vc2">
+            12<br /><small>años de experiencia</small>
+          </div>
+          <div class="visual-card vc3">
+            🏆<br /><small>Mejor tienda 2024</small>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="container footer-inner">
+        <div class="footer-brand">
+          <span class="nav-logo-text" style="font-size: 22px">VELOCIA</span>
+          <p>Tu ciclovía de confianza.</p>
+        </div>
+        <div class="footer-links">
+          <span>© 2025 Velocia. Todos los derechos reservados.</span>
+        </div>
+      </div>
+    </footer>
+
+    <!-- CARRITO SIDEBAR -->
+    <div id="cartOverlay" class="cart-overlay"></div>
+    <aside id="cartSidebar" class="cart-sidebar">
+      <div class="cart-header">
+        <h3>Tu Carrito 🛒</h3>
+        <button class="cart-close" id="cartClose">✕</button>
+      </div>
+      <div id="cartItems" class="cart-items"></div>
+      <div class="cart-footer" id="cartFooter" style="display: none">
+        <div class="cart-total-row">
+          <span>Total</span>
+          <span id="cartTotal" class="cart-total-amount">$0</span>
+        </div>
+        <button class="btn-primary full" id="btnComprar">
+          Finalizar Compra
+        </button>
+        <button class="btn-ghost-red full" id="btnVaciar">
+          Vaciar carrito
+        </button>
+      </div>
+      <div id="cartEmpty" class="cart-empty">
+        <span style="font-size: 3rem">🚲</span>
+        <p>Tu carrito está vacío.<br />¡Agrega tu primera bicicleta!</p>
+      </div>
+    </aside>
+
+    <!-- TOAST -->
+    <div id="toast" class="toast"></div>
+
+    <!-- MODAL PRODUCTO -->
+    <div id="productModal" class="modal-overlay">
+      <div class="modal-box" id="modalBox"></div>
+    </div>
+
+    <script src="script .js"></script>
+  </body>
+</html>
