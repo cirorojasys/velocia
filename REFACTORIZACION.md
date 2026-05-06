@@ -1,4 +1,4 @@
-# VELOCIA — Guía de Refactorización
+# VELOCIA — Refactorización
 
 ## Paso 1: Separar `script.js` en múltiples archivos
 
